@@ -3,13 +3,13 @@
 <head>
   <title>Steam URI Redirect</title>
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://linkoid.github.io/steamuri/">
+  <meta property="og:url" content="https://steamuri.com/">
   <meta property="og:title" content="Steam URI Redirect">
   <meta property="og:description" content="Quickly redirect to Steam URIs">
   <meta property="og:image" content="https://community.cloudflare.steamstatic.com/public/shared/images/responsive/steam_share_image.jpg">
   <script>
-    // Get path after https://linkoid.gitub.io/steamuri/
-    var targetPath = window.location.pathname.substr("/steamuri/".length);
+    // Get path after https://steamuri.com/
+    var targetPath = window.location.pathname.substr(1);
     var redirectUri = "steam://" + targetPath;
     console.log("Redirecting to " + redirectUri)
     // Perform the redirection to the specified 
