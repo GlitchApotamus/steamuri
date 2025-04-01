@@ -1,22 +1,55 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Steam URI Redirect</title>
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://steamuri.com/">
   <meta property="og:title" content="Steam URI Redirect">
   <meta property="og:description" content="Quickly redirect to Steam URIs">
-  <meta property="og:image" content="https://community.cloudflare.steamstatic.com/public/shared/images/responsive/steam_share_image.jpg">
+  <meta property="og:image"
+    content="https://community.cloudflare.steamstatic.com/public/shared/images/responsive/steam_share_image.jpg">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="global.css">
   <script>
-    // Get path after https://steamuri.com/
     var targetPath = window.location.pathname.substr(1);
     var redirectUri = "steam://" + targetPath;
     console.log("Redirecting to " + redirectUri)
-    // Perform the redirection to the specified 
     window.location.href = redirectUri
   </script>
 </head>
-<body>
-  This link has been opened with Steam.
+
+<body class="min-h-screen overflow-auto text-gray-800">
+  <header class="flex items-center justify-evenly bg-gray-800 px-2 py-4 text-white md:flex">
+    <div id="steam-icon-container" class="flex flex-row items-center">
+      <a href="https://www.freeiconspng.com/img/14871" title="Image from freeiconspng.com">
+        <img src="https://www.freeiconspng.com/uploads/steam-logo-icon-7.png" class="m-3 h-[64px] w-[64px]"
+          alt="Steam Library Icon" /></a>
+      <p id="site-name" class="font-ps2p pl-[50px] text-4xl md:pl-0 md:text-lg">
+        <a href="/"> Steam URI Redirects</a>
+      </p>
+    </div>
+  </header>
+  <div class="flex min-h-screen flex-col bg-cover bg-center bg-no-repeat" style="background-image: url('hero.jpg');">
+    <main class="flex-1 overflow-x-hidden text-grey-800 transition-all duration-300">
+      <div class="md:text-xxl xxl:text-4xl xl:text-3xl lg:text-2xl sm:text-xl">
+        <div class="absolute" style="top: 50%; left: 50%; transform: translate(-50%, -50%);">
+          <div
+            class="overflow-auto rounded-lg bg-gray-800 bg-opacity-75 p-4 text-center text-[#a8e405] shadow-md max-h-[calc(100vh-4rem)] sm:max-h-[calc(100vh-8rem)]">
+            <p
+            class="md:text-xxl font-twinkle text-inherit xxl:text-4xl xl:text-3xl lg:text-2xl sm:text-xl"
+            >
+              This link has been opened with Steam.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <footer class="relative w-full bg-[#333] p-1 text-center text-3xl text-white md:text-lg">
+    <p>&copy; 2025 Steam URI Redirects</p>
+  </footer>
 </body>
+
 </html>

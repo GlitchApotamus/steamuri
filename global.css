@@ -1,0 +1,218 @@
+.min-h-screen {
+    min-height: 100vh;
+}
+
+.overflow-auto {
+    overflow: auto;
+}
+
+.text-gray-800 {
+    color: #2d3748;
+}
+
+.flex {
+    display: flex;
+}
+.text-center {
+    text-align: center;
+}
+.items-center {
+    align-items: center;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
+}
+
+.bg-gray-800 {
+    background-color: #2d3748;
+}
+
+.px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.m-3 {
+    margin: 0.75rem;
+}
+
+.h-\[64px\] {
+    height: 64px;
+}
+
+.w-\[64px\] {
+    width: 64px;
+}
+
+.pl-\[50px\] {
+    padding-left: 50px;
+}
+
+.text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+
+.md\:pl-0 {
+    padding-left: 0;
+}
+
+.md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.bg-cover {
+    background-size: cover;
+}
+
+.bg-center {
+    background-position: center;
+}
+
+.bg-no-repeat {
+    background-repeat: no-repeat;
+}
+
+.flex-1 {
+    flex: 1 1 0%;
+}
+
+.overflow-x-hidden {
+    overflow-x: hidden;
+}
+
+.text-grey-800 {
+    color: #4a4a4a;
+}
+
+.transition-all {
+    transition: all 0.3s;
+}
+
+.duration-300 {
+    transition-duration: 300ms;
+}
+
+.md\:text-xxl {
+    font-size: 1.25rem;
+}
+
+.xxl\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+
+.xl\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+
+.lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.sm\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.text-\[\#a8e405\] {
+    color: #a8e405;
+}
+
+.shadow-md {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.max-h-\[calc\(100vh-4rem\)\] {
+    max-height: calc(100vh - 4rem);
+}
+
+.text-inherit {
+    color: inherit;
+}
+
+@media (min-width: 640px) {
+    .sm\:max-h-\[calc\(100vh-8rem\)\] {
+        max-height: calc(100vh - 8rem);
+    }
+}
+
+.relative {
+    position: relative;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.bg-\[\#333\] {
+    background-color: #333333;
+}
+
+.p-1 {
+    padding: 0.25rem;
+}
+
+.text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+
+.md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+@media (min-width: 1024px) {
+    .text-2xl-4xl {
+        font-size: 2.25rem;
+    }
+
+    .text-xl-3xl {
+        font-size: 1.875rem;
+    }
+
+    .lg\:text-2xl {
+        font-size: 1.5rem;
+    }
+
+    .sm\:text-xl {
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 768px) {
+    #site-name {
+        padding-left: 0;
+        font-size: 1.125rem;
+    }
+
+    footer {
+        font-size: 1.125rem;
+    }
+}
