@@ -12,14 +12,14 @@
   <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="/css/global.css">
   <script>
-    (function() {
+    document.addEventListener("DOMContentLoaded", function() {
       var targetPath = window.location.pathname.substr(1);
-      if (targetPath.length == 0) return;
+      if (targetPath.length == 0 || targetPath.includes("404")) return;
       var redirectUri = "steam://" + targetPath;
       console.log("Redirecting to " + redirectUri);
-      document.getElementById("toChange").innerText = "This link has been opened with Steam.";
+      document.getElementById("toChange").innerHTML = "This link has been opened with Steam.";
       window.location.href = redirectUri;
-    })();
+    });
   </script>
 </head>
 
@@ -61,7 +61,7 @@
           <h2>Examples:</h2>
           <ul>
             <li>
-              <a href="https://steamuri.com/open/games">Open Games Library</a>
+              <a href="steam://open/games">Open Games Library</a>
             </li>
           </ul><br />
 
@@ -69,11 +69,11 @@
           <p>To start the game, use either of the following</p>
           <ul>
             <li>
-              <a href="https://steamuri.com/rungameid/3241660"
+              <a href="steam://rungameid/3241660"
                 >Run Game R.E.P.O.</a>
             </li>
             <li>
-              <a href="https://steamuri.com/launch/3241660"
+              <a href="steam://launch/3241660"
                 >Launch Game R.E.P.O.</a>
             </li>
           </ul>
@@ -84,7 +84,7 @@
           <ul>
             <li>
               <a
-                href="https://steamuri.com/joinlobby/3241660/109775242882000195/76561198110831030"
+                href="steam://joinlobby/3241660/109775242882000195/76561198110831030"
                 >Join a Lobby</a>
             </li>
           </ul><p>
