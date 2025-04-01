@@ -1,3 +1,9 @@
+a {
+    color: #ffffff
+}
+a:visited {
+    color: white;
+}
 .min-h-screen {
     min-height: 100vh;
 }

@@ -13,8 +13,10 @@
   <link rel="stylesheet" href="/css/global.css">
   <script>
     var targetPath = window.location.pathname.substr(1);
+    if (targetPath.length == 0) return;
     var redirectUri = "steam://" + targetPath;
     console.log("Redirecting to " + redirectUri)
+    document.getElementById("toChange").innerHTML = "This link has been opened with Steam."
     window.location.href = redirectUri
   </script>
 </head>
@@ -36,9 +38,69 @@
         <div class="absolute" style="top: 50%; left: 50%; transform: translate(-50%, -50%);">
           <div
             class="overflow-auto rounded-lg bg-gray-800 bg-opacity-75 p-4 text-center text-[#a8e405] shadow-md max-h-[calc(100vh-4rem)] sm:max-h-[calc(100vh-8rem)]">
-            <p class="md:text-xxl font-twinkle text-inherit xxl:text-4xl xl:text-3xl lg:text-2xl sm:text-xl">
-              This link has been opened with Steam.
-            </p>
+            <div id="toChange" class="md:text-xxl font-twinkle text-inherit xxl:text-4xl xl:text-3xl lg:text-2xl sm:text-xl">
+              <h3>Welcome to the Steam URI Redirector!</h3>
+          <p>
+            This tool allows you to quickly redirect Steam URIs for specific
+            actions or navigation.
+          </p><br />
+
+          <h2>How to Use:</h2>
+          <ul>
+            <li>
+              Get the Steam URI you want to use (e.g., steam://rungameid/730).
+            </li>
+            <li>Strip off steam://</li>
+            <li>
+              Append the remainder of the Steam URI to this website's base URL.
+            </li>
+          </ul><br />
+
+          <h2>Examples:</h2>
+          <ul>
+            <li>
+              <a href="https://steamuri.com/open/games">Open Games Library</a>
+            </li>
+          </ul><br />
+
+          <h2>These are examples of the game R.E.P.O.:</h2>
+          <p>To start the game, use either of the following</p>
+          <ul>
+            <li>
+              <a href="https://steamuri.com/rungameid/3241660"
+                >Run Game R.E.P.O.</a>
+            </li>
+            <li>
+              <a href="https://steamuri.com/launch/3241660"
+                >Launch Game R.E.P.O.</a>
+            </li>
+          </ul>
+          <p>
+            To join a specific lobby in the game, perhaps one your friend is
+            hosting, use this one
+          </p>
+          <ul>
+            <li>
+              <a
+                href="https://steamuri.com/joinlobby/3241660/109775242882000195/76561198110831030"
+                >Join a Lobby</a>
+            </li>
+          </ul><p>
+            Make sure you replace the lobbyId and steamId with the proper
+            digits.
+          </p><br />
+
+          <p>Open the constructed URL in your web browser.</p>
+          <p>
+            The website will process the Steam URI and perform the corresponding
+            action.
+          </p><br />
+
+          <h2>Important Notes:</h2>
+          <p>Ensure the Steam URI is valid and correctly formatted.</p>
+          <p>This website is not affiliated with Steam or Valve in any way.</p>
+
+            </div>
           </div>
         </div>
       </div>
