@@ -156,6 +156,25 @@
     color: inherit;
 }
 
+.items-start {
+    align-items: flex-start;
+}
+
+.flex-col-reverse {
+    flex-direction: column-reverse;
+}
+
+.inline {
+    display: inline;
+}
+
+.gih {
+    height: 1.8rem /* 24px */;
+}
+
+.giw {
+    width: 1.8rem /* 24px */;
+}
 @media (min-width: 640px) {
     .sm\:max-h-\[calc\(100vh-8rem\)\] {
         max-height: calc(100vh - 8rem);
