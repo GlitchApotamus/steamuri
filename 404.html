@@ -12,12 +12,14 @@
   <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="/css/global.css">
   <script>
-    var targetPath = window.location.pathname.substr(1);
-    if (targetPath.length == 0) return;
-    var redirectUri = "steam://" + targetPath;
-    console.log("Redirecting to " + redirectUri)
-    document.getElementById("toChange").innerHTML = "This link has been opened with Steam."
-    window.location.href = redirectUri
+    (function() {
+      var targetPath = window.location.pathname.substr(1);
+      if (targetPath.length == 0) return;
+      var redirectUri = "steam://" + targetPath;
+      console.log("Redirecting to " + redirectUri);
+      document.getElementById("toChange").innerHTML = "This link has been opened with Steam.";
+      window.location.href = redirectUri;
+    })();
   </script>
 </head>
 
