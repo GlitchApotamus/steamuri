@@ -17,7 +17,7 @@
       if (targetPath.length == 0) return;
       var redirectUri = "steam://" + targetPath;
       console.log("Redirecting to " + redirectUri);
-      document.getElementById("toChange").innerHTML = "This link has been opened with Steam.";
+      document.getElementById("toChange").innerText = "This link has been opened with Steam.";
       window.location.href = redirectUri;
     })();
   </script>
