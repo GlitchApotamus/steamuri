@@ -12,7 +12,7 @@
   <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="/css/global.css">
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function () {
       var targetPath = window.location.pathname.substr(1);
       var home = document.getElementById("home");
       var a = document.getElementById("home-button");
@@ -29,7 +29,7 @@
       a.title = "Return to Home page";
       i.src = "https://www.freeiconspng.com/uploads/home-button-icon-png-23.png";
       i.alt = "Home Page Icon";
-      i.classList="h-[64px] w-[64px]";
+      i.classList = "h-[64px] w-[64px]";
       change.innerHTML = "This link has been opened with Steam.";
       window.location.href = redirectUri;
     });
@@ -41,102 +41,100 @@
     style="background-image: url('/public/hero.jpg');">
     <div class="flex items-start px-2 py-4">
       <div id="steam-icon-container" class="flex flex-row items-center">
-          <img src="https://www.freeiconspng.com/uploads/steam-logo-icon-7.png" class="m-3 h-[64px] w-[64px]"
-            alt="Steam Library Icon" />
+        <img src="https://www.freeiconspng.com/uploads/steam-logo-icon-7.png" class="m-3 h-[64px] w-[64px]"
+          alt="Steam Library Icon" />
         <p id="site-name" class="pl-[50px] text-4xl md:pl-0 md:text-lg text-white">
           Steam URI Redirects
         </p>
       </div>
     </div>
     <main class="flex-1 overflow-auto text-grey-800 transition-all duration-300">
-      
-      <div class="md:text-xxl xxl:text-4xl xl:text-3xl lg:text-2xl sm:text-xl">
-        <div class="absolute" style="top: 50%; left: 50%; transform: translate(-50%, -50%);">
-          <div id="home" class="hidden">
-            <a id="home-button">
-                <img id="gotohome" src="" alt="">
-            </a>
-          </div>
-          <div
-            class="overflow-auto rounded-lg bg-gray-800 bg-opacity-75 p-4 text-center text-[#a8e405] shadow-md max-h-[calc(100vh-4rem)] sm:max-h-[calc(100vh-8rem)]">
-            
-            <div id="toChange" class="md:text-xxl font-twinkle text-inherit xxl:text-4xl xl:text-3xl lg:text-2xl sm:text-xl">
-              <h3>Welcome to the Steam URI Redirector!</h3>
-          <p>
-            This tool allows you to quickly redirect Steam URIs for specific
-            actions or navigation.
-          </p>
 
-          <h1>How to Use:</h1>
-          <ul>
-            <li>
-              Get the Steam URI you want to use (e.g., steam://rungameid/730).
-            </li>
-            <li>Strip off steam://</li>
-            <li>
-              Append the remainder of the Steam URI to this website's base URL.
-            </li>
-          </ul>
+      <div class="absolute" style="top: 50%; left: 50%; transform: translate(-50%, -50%);">
+        <div id="home" class="hidden">
+          <a id="home-button">
+            <img id="gotohome" src="" alt="">
+          </a>
+        </div>
+        <div
+          class="overflow-auto rounded-lg bg-gray-800 bg-opacity-75 p-4 text-center text-[#a8e405] shadow-md max-h-[calc(100vh-4rem)] sm:max-h-[calc(100vh-8rem)]">
 
-          <h1>Examples:</h1>
-          <ul>
-            <li>
-              <a href="steam://open/games">Open Games Library >> https://steamuri.com/open/games</a>
-            </li>
-          </ul>
+          <div id="toChange"
+            class="md:text-xxl font-twinkle text-inherit xxl:text-4xl xl:text-3xl lg:text-2xl sm:text-xl">
+            <h3>Welcome to the Steam URI Redirector!</h3>
+            <p>
+              This tool allows you to quickly redirect Steam URIs for specific
+              actions or navigation.
+            </p>
 
-          <h1>These are examples of the game R.E.P.O.:</h1>
-          <p>To start the game, use either of the following</p>
-          <ul>
-            <li>
-              <a href="steam://rungameid/3241660"
-                >Run Game R.E.P.O. >> https://steamuri.com/rungameid/3241660</a>
-            </li>
-            <li>
-              <a href="steam://launch/3241660"
-                >Launch Game R.E.P.O. >> https://steamuri.com/launch/3241660</a>
-            </li>
-          </ul>
-          <p>
-            To join a specific lobby in the game, perhaps one your friend is
-            hosting, use this one
-          </p>
-          <ul>
-            <li>
-              <a
-                href="steam://joinlobby/3241660/109775242882000195/76561198110831030"
-                >Join a Lobby>> https://steamuri.com/joinlobby/gameid/lobbyid/steamuserid</a>
-            </li>
-          </ul><p>
-            Make sure you replace the lobbyId and steamId with the proper
-            digits.
-          </p>
+            <h1>How to Use:</h1>
+            <ul>
+              <li>
+                Get the Steam URI you want to use (e.g., steam://rungameid/730).
+              </li>
+              <li>Strip off steam://</li>
+              <li>
+                Append the remainder of the Steam URI to this website's base URL.
+              </li>
+            </ul>
 
-          <p>Open the constructed URL in your web browser.</p>
-          <p>
-            The website will process the Steam URI and perform the corresponding
-            action.
-          </p>
+            <h1>Examples:</h1>
+            <ul>
+              <li>
+                <a href="steam://open/games">Open Games Library >> https://steamuri.com/open/games</a>
+              </li>
+            </ul>
 
-          <h1>Important Notes:</h1>
-          <p>Ensure the Steam URI is valid and correctly formatted.</p>
-          <p>This website is not affiliated with Steam or Valve in any way.</p>
+            <h1>These are examples of the game R.E.P.O.:</h1>
+            <p>To start the game, use either of the following</p>
+            <ul>
+              <li>
+                <a href="steam://rungameid/3241660">Run Game R.E.P.O. >> https://steamuri.com/rungameid/3241660</a>
+              </li>
+              <li>
+                <a href="steam://launch/3241660">Launch Game R.E.P.O. >> https://steamuri.com/launch/3241660</a>
+              </li>
+            </ul>
+            <p>
+              To join a specific lobby in the game, perhaps one your friend is
+              hosting, use this one
+            </p>
+            <ul>
+              <li>
+                <a href="steam://joinlobby/3241660/109775242882000195/76561198110831030">Join a Lobby>>
+                  https://steamuri.com/joinlobby/gameid/lobbyid/steamuserid</a>
+              </li>
+            </ul>
+            <p>
+              Make sure you replace the lobbyId and steamId with the proper
+              digits.
+            </p>
 
-            </div>
+            <p>Open the constructed URL in your web browser.</p>
+            <p>
+              The website will process the Steam URI and perform the corresponding
+              action.
+            </p>
+
+            <h1>Important Notes:</h1>
+            <p>Ensure the Steam URI is valid and correctly formatted.</p>
+            <p>This website is not affiliated with Steam or Valve in any way.</p>
+
           </div>
         </div>
       </div>
     </main>
     <div class="relative w-full px-2 py-4 text-center text-3xl text-white md:text-lg items-start">
       <div class="flex items-center flex-row">
-        <p class="pl-[50px] text-4xl md:pl-0 md:text-lg text-white">&copy; 2025 Steam URI Redirects 
+        <p class="pl-[50px] text-4xl md:pl-0 md:text-lg text-white">&copy; 2025 Steam URI Redirects
           <a href="https://github.com/GlitchApotamus/steamuri" title="website Github Repo"><img
-              src="https://www.freeiconspng.com/uploads/github-cat-in-a-circle-icon-21.png" width="36"
-              alt="Github Icon" class="inline gih giw" style="top: 50%; left: 50%; transform: translate(50%, 25%);" /></a>
+              src="https://www.freeiconspng.com/uploads/github-cat-in-a-circle-icon-21.png" width="36" alt="Github Icon"
+              class="inline gih giw" style="top: 50%; left: 50%; transform: translate(50%, 25%);" /></a>
 
           <a href="https://discord.com/users/342314924804014081" title="GlitchApotamus Discord">
             <img src="https://www.freeiconspng.com/uploads/silver-discord-token-icon-16.png" width="36"
-              alt="Silver Discord Token Icon" class="inline gih giw" style="top: 50%; left: 50%; transform: translate(50%, 25%);"/></a>
+              alt="Silver Discord Token Icon" class="inline gih giw"
+              style="top: 50%; left: 50%; transform: translate(50%, 25%);" /></a>
         </p>
       </div>
     </div>
