@@ -17,6 +17,16 @@
       if (targetPath.length == 0 || targetPath.includes("404")) return;
       var redirectUri = "steam://" + targetPath;
       console.log("Redirecting to " + redirectUri);
+      var a = document.createElement("a");
+      a.id = "home button";
+      a.href = "/";
+      a.title = "Return to Home page";
+      var img = document.createElement("img");
+      img.src = "https://www.freeiconspng.com/uploads/home-button-icon-png-23.png";
+      img.alt = "Home Page Icon";
+      img.class="m-3 h-[64px] w-[64px]";
+      document.getElementById("home button").appendChild(img);
+      document.getElementById("home").appendChild(a);
       document.getElementById("toChange").innerHTML = "This link has been opened with Steam.";
       window.location.href = redirectUri;
     });
@@ -40,6 +50,7 @@
         <div class="absolute" style="top: 50%; left: 50%; transform: translate(-50%, -50%);">
           <div
             class="overflow-auto rounded-lg bg-gray-800 bg-opacity-75 p-4 text-center text-[#a8e405] shadow-md max-h-[calc(100vh-4rem)] sm:max-h-[calc(100vh-8rem)]">
+            <div id="home"></div>
             <div id="toChange" class="md:text-xxl font-twinkle text-inherit xxl:text-4xl xl:text-3xl lg:text-2xl sm:text-xl">
               <h3>Welcome to the Steam URI Redirector!</h3>
           <p>
