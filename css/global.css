@@ -48,6 +48,12 @@ a:visited {
     padding-bottom: 1rem;
 }
 
+.homediv {
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
 .text-white {
     color: #ffffff;
 }
