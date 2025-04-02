@@ -51,7 +51,6 @@ a:visited {
 .homediv {
     display: grid;
     place-items: center;
-    position: relative;
 }
 
 .text-white {
