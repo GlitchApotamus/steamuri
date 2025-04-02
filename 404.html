@@ -19,7 +19,8 @@
       var i = document.getElementById("gotohome");
       var change = document.getElementById("toChange");
       if (targetPath.length == 0 || targetPath.includes("404")) {
-        home.className = "hidden"
+        home.className = "hidden";
+        return;
       };
       var redirectUri = "steam://" + targetPath;
       console.log("Redirecting to " + redirectUri);
